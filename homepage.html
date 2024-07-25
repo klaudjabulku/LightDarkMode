@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Klaudja Bulku</title>
+  <link rel="stylesheet" href="homepageStyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+        <i class="bi bi-brightness-high"></i>
+            <i class="fas fa-moon"></i> <!-- Initial icon class for light mode -->
+          </div>
+          
+      </div>
+    </nav>
+  </header>
+
+  <section id="profile">
+    <div class="profile-container">
+      <div class="profile-pic-container">
+        <img src="IMG_3256.jpg" alt="Profile Picture" class="profile-pic">
+      </div>
+      <div class="profile-details">
+        <h1 class="profile-name">Klaudja Bulku</h1>
+        <p class="profile-title">Junior Java Developer</p>
+
+        <p class="profile-description">
+            A creative and dedicated professional, I excel at managing multiple priorities with a 
+            positive attitude. My adaptability and willingness to embrace new responsibilities enable 
+            me to effectively contribute to team success and achieve shared goals.
+        </p>
+        <div class="btn-container">
+          <button class="btn">Download CV</button>
+          <button class="btn">Contact</button>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="work-experience">
+        <h2 class="workplace">Work Experience</h2>
+        <div class="job">
+            <p class="work-place">Albit Consulting - Accountant</p>
+            <p class="job-description">
+                - Used advanced software to prepare documents, reports, and presentations.<br>
+                - Improved financial reporting accuracy through meticulous data analysis and reconciliation efforts.<br>
+                - Handled day-to-day accounting processes to drive financial accuracy.
+            </p>
+        </div>
+        <div class="job">
+            <p class="work-place">Assist Digital - Quality Assurance Executive</p>
+            <p class="job-description">
+                - Prepared quality documentation and reports by collecting, analyzing and summarizing information and trends.<br>
+                - Achieved quality assurance objectives by contributing information and analysis to strategic plans and reviews and preparing and completing action plans.<br>
+                - Enhanced customer satisfaction with thorough service inspections and timely issue resolution.
+            </p>
+        </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="education-experience">
+        <h2 class="education-heading">Education</h2>
+        <div class="education-details">
+            <p class="education-place">SDA by Protik - Java from Scratch</p>
+            <p class="education-description">
+                My program included comprehensive training in Java basics and advanced concepts, MySQL database management, 
+                design patterns and best practices, as well as front-end technologies like CSS, HTML, and Angular. 
+                Additionally, I gained hands-on experience with the Spring Boot framework and software testing methodologies.
+            </p>
+        </div>
+        <div class="education-details">
+            <p class="education-place">Polytechnic University of Tirana - Master of Science - Engineering Economics</p>
+            <p class="education-description">
+                I hold a Master of Science in Engineering Economics, a multidisciplinary program that integrates advanced principles 
+                of engineering with economic analysis. This degree has equipped me with a unique skill set that allows me to address 
+                complex problems at the intersection of technology and economics.
+            </p>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Klaudja Bulku. All Rights Reserved.</p>
+  </footer>
+
+  <script src="server.js"></script>
+</body>
+</html>

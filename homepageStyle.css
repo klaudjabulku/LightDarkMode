@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff; 
+    color: #333; 
+}
+
+body.dark-mode {
+    background-color: #121212; 
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa; 
+    border-bottom: 1px solid #ddd;
+}
+
+body.dark-mode header {
+    background-color: #333; 
+    border-bottom: 1px solid #444; 
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333; 
+}
+
+body.dark-mode .logo {
+    color: #ffffff; 
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333; 
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff; 
+}
+
+.nav-links a.dark-mode {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links a {
+    color: #ffffff; 
+}
+
+.dark-mode-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dark-mode-toggle i {
+    transition: color 0.3s;
+}
+
+.dark-mode-toggle i.bi-brightness-high {
+    color: #333; 
+}
+
+.dark-mode-toggle i.fas.fa-moon {
+    color: #333; 
+}
+
+body.dark-mode .dark-mode-toggle i.bi-brightness-high,
+body.dark-mode .dark-mode-toggle i.fas.fa-moon {
+    color: #ffffff; 
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-details {
+    max-width: 600px;
+}
+
+.profile-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.profile-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007bff; 
+}
+
+.profile-title.dark-mode {
+    color: #ffffff; 
+}
+
+.profile-description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn.dark-mode {
+    background-color: #ffffff; 
+    color: #121212; 
+}
+
+.btn.dark-mode:hover {
+    background-color: #cccccc;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #007bff; 
+    font-size: 1.5rem;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0056b3; 
+}
+
+.social-links a.dark-mode {
+    color: #ffffff; 
+}
+
+.card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work-experience .job,
+.education-experience .education-details {
+    margin-bottom: 20px;
+}
+
+.workplace,
+.education-heading {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.workplace.dark-mode,
+.education-heading.dark-mode {
+    color: #ffffff; 
+}
+
+.work-place,
+.education-place {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.work-place::before,
+.education-place::before {
+    content: "• ";
+    color: #007bff; 
+}
+
+.work-place.dark-mode::before,
+.education-place.dark-mode::before {
+    color: #ffffff; 
+}
+
+footer {
+    width: 100%;
+    background-color: #f1f1f1; 
+    padding: 10px 0; 
+    text-align: center; 
+    position: relative; 
+    bottom: 0;
+}
+
+body.dark-mode footer {
+    background-color: #333; 
+}
+
+footer p {
+    margin: 0; 
+    line-height: 1.5;
+    color: #333; 
+}
+
+body.dark-mode footer p {
+    color: #ffffff; 
+}
